@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Workspace>
+	<Workspace_Title/>
+	<Workspace_Vertion>1.3.2</Workspace_Vertion>
+	<Workspace_Date>2023/05/28 21:37:16</Workspace_Date>
+	<Project>RC1</Project>
+	<Display3D>
+		<RobotModelType>0</RobotModelType>
+	</Display3D>
+	<ScreenRect>
+		<Screen160>
+			<AdditionalInfo/>
+			<Left>-98</Left>
+			<Top>7</Top>
+			<Right>776</Right>
+			<Bottom>624</Bottom>
+		</Screen160>
+	</ScreenRect>
+	<LastLayoutSelect>kenanodeev</LastLayoutSelect>
+</Workspace>

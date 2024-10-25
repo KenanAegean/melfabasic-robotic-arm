@@ -1,0 +1,14 @@
+RV-7FL-DNARC parameter system V1.0;
+RLNG=Ud,2;
+MEINSD=Ul,1245183;
+MEORGNO=Md,-1,-1,-1,-1,-1,-1,-1,-1;
+FSIFUREV=Mx,0x0,0x0;
+FSIFVER=Us,"";
+MEXBS=Uf,0,0,200,%r0,%r0,%r0;
+MEXBSNO=Ud,-1;
+MEXTL=Uf,0,0,200,%r0,%r0,%r0;
+MEXTLNO=Ui,0;
+MEXTL1=Uf,0,0,0,%r0,%r0,%r0;
+MEXTL2=Uf,0,0,0,%r0,%r0,%r0;
+MEXTL3=Uf,0,0,0,%r0,%r0,%r0;
+MEXTL4=Uf,0,0,0,%r0,%r0,%r0;

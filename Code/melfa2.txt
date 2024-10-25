@@ -1,0 +1,236 @@
+ma1=5
+mc1=0
+mb1=0
+mTotal=0
+M_Out(130)=0
+M_Out(131)=1
+M_Out(132)=1
+M_Out(133)=1
+M_Out(134)=1
+M_Out(135)=1
+M_Out(136)=1
+M_Out(141)=0
+M_Out(142)=0
+M_Out(143)=0
+M_Out(144)=0
+M_Out(145)=0
+M_Out(146)=0
+M_Out(151)=0
+M_Out(152)=0
+M_Out(153)=0
+M_Out(154)=0
+M_Out(155)=0
+M_Out(156)=0
+While 1
+    masaAson=0
+    masaBson=0
+    masaCson=0
+    mTotal=mc1+mb1
+    Wait M_In8(100) <> 0
+    Wait (M_In(10111)=0 And mTotal<6) Or (M_In(10111)=1 And mTotal<6)
+    If M_Out(131)=0 Then Mov phome
+    If M_In(15)=1 Then
+        M_Out(141)=0
+        M_Out(142)=0
+        M_Out(143)=0
+        M_Out(144)=0
+        M_Out(145)=0
+        M_Out(146)=0
+        mb1 = 0
+    EndIf
+    If M_In(16)=1 Then
+        M_Out(151)=0
+        M_Out(152)=0
+        M_Out(153)=0
+        M_Out(154)=0
+        M_Out(155)=0
+        M_Out(156)=0
+        mc1 = 0
+    EndIf
+    If M_Out(130)=0 And ma1>=0 Then
+        If (ma1=5 And masaAson=0) Then
+            Mov pmasaA1, -50
+            Mvs pmasaA1
+            M_Out(130)=1
+            M_Out(131)=0
+            Dly 1
+            Mov pmasaA1, -50
+            ma1=ma1-1
+            masaAson=1
+        EndIf
+        If (ma1=4 And masaAson=0) Then
+            Mov pmasaA2, -50
+            Mvs pmasaA2
+            M_Out(130)=1
+            M_Out(132)=0
+            Dly 1
+            Mov pmasaA2, -50
+            ma1=ma1-1
+            masaAson=1
+        EndIf
+        If (ma1=3 And masaAson=0) Then
+            Mov pmasaA3, -50
+            Mvs pmasaA3
+            M_Out(130)=1
+            M_Out(133)=0
+            Dly 1
+            Mov pmasaA3, -50
+            ma1=ma1-1
+            masaAson=1
+        EndIf
+        If (ma1=2 And masaAson=0) Then
+            Mov pmasaA4, -50
+            Mvs pmasaA4
+            M_Out(130)=1
+            M_Out(134)=0
+            Dly 1
+            Mov pmasaA4, -50
+            ma1=ma1-1
+            masaAson=1
+        EndIf
+        If (ma1=1 And masaAson=0) Then
+            Mov pmasaA5, -50
+            Mvs pmasaA5
+            M_Out(130)=1
+            M_Out(135)=0
+            Dly 1
+            Mov pmasaA5, -50
+            ma1=ma1-1
+            masaAson=1
+        EndIf
+        If (ma1=0 And masaAson=0) Then
+            Mov pmasaA6, -50
+            Mvs pmasaA6
+            M_Out(130)=1
+            M_Out(136)=0
+            Dly 1
+            Mov pmasaA6, -50
+            ma1=ma1-1
+            masaAson=1
+        EndIf
+    EndIf
+    If M_In(10111)=0 And mTotal<6 Then
+        If (mb1=0 And masaBson=0) Then
+            Mov pmasaB1, -50
+            Mvs pmasaB1
+            M_Out(130)=0
+            M_Out(141)=1
+            mb1=mb1+1
+            Dly 1
+            Mov pmasaB1, -50
+            masaBson=1
+        EndIf
+        If (mb1=1 And masaBson=0) Then
+            Mov pmasaB2, -50
+            Mvs pmasaB2
+            M_Out(130)=0
+            M_Out(142)=1
+            mb1=mb1+1
+            Dly 1
+            Mov pmasaB2, -50
+            masaBson=1
+        EndIf
+        If (mb1=2 And masaBson=0) Then
+            Mov pmasaB3, -50
+            Mvs pmasaB3
+            M_Out(130)=0
+            M_Out(143)=1
+            mb1=mb1+1
+            Dly 1
+            Mov pmasaB3, -50
+            masaBson=1
+        EndIf
+        If (mb1=3 And masaBson=0) Then
+            Mov pmasaB4, -50
+            Mvs pmasaB4
+            M_Out(130)=0
+            M_Out(144)=1
+            mb1=mb1+1
+            Dly 1
+            Mov pmasaB4, -50
+            masaBson=1
+        EndIf
+        If (mb1=4 And masaBson=0) Then
+            Mov pmasaB5, -50
+            Mvs pmasaB5
+            M_Out(130)=0
+            M_Out(145)=1
+            mb1=mb1+1
+            Dly 1
+            Mov pmasaB5, -50
+            masaBson=1
+        EndIf
+        If (mb1=5 And masaBson=0) Then
+            Mov pmasaB6, -50
+            Mvs pmasaB6
+            M_Out(130)=0
+            M_Out(146)=1
+            mb1=mb1+1
+            Dly 1
+            Mov pmasaB6, -50
+            masaBson=1
+        EndIf
+    EndIf
+    If M_In(10111)=1 And mTotal<6 Then
+        If (mc1=0 And masaCson=0) Then
+            Mov pmasaC1, -50
+            Mvs pmasaC1
+            M_Out(130)=0
+            M_Out(151)=1
+            mc1=mc1+1
+            Dly 1
+            Mov pmasaC1, -50
+            masaCson=1
+        EndIf
+        If (mc1=1 And masaCson=0) Then
+            Mov pmasaC2, -50
+            Mvs pmasaC2
+            M_Out(130)=0
+            M_Out(152)=1
+            mc1=mc1+1
+            Dly 1
+            Mov pmasaC1, -50
+            masaCson=1
+        EndIf
+        If (mc1=2 And masaCson=0) Then
+            Mov pmasaC3, -50
+            Mvs pmasaC3
+            M_Out(130)=0
+            M_Out(153)=1
+            mc1=mc1+1
+            Dly 1
+            Mov pmasaC3, -50
+            masaCson=1
+        EndIf
+        If (mc1=3 And masaCson=0) Then
+            Mov pmasaC4, -50
+            Mvs pmasaC4
+            M_Out(130)=0
+            M_Out(154)=1
+            mc1=mc1+1
+            Dly 1
+            Mov pmasaC4, -50
+            masaCson=1
+        EndIf
+        If (mc1=4 And masaCson=0) Then
+            Mov pmasaC5, -50
+            Mvs pmasaC5
+            M_Out(130)=0
+            M_Out(155)=1
+            mc1=mc1+1
+            Dly 1
+            Mov pmasaC5, -50
+            masaCson=1
+        EndIf
+        If (mb1=5 And masaCson=0) Then
+            Mov pmasaC6, -50
+            Mvs pmasaC6
+            M_Out(130)=0
+            M_Out(156)=1
+            mc1=mc1+1
+            Dly 1
+            Mov pmasaC6, -50
+            masaCson=1
+        EndIf
+    EndIf
+WEnd

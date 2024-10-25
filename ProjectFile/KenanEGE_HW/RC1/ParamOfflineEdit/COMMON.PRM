@@ -1,0 +1,16 @@
+COMMON.PRMNARC parameter system V1.0;
+MECHA1=Ms,"RV-7FL-D";
+LNG=Us,"ENG";
+RCTYPE=Md,1,0;
+PRGDPNT=Ud,2;
+PUNT=Mx,0x7;
+JUNT=Mx,0x0;
+PRERLNG=Md,2;
+MAINVER=Ms,"Ver.S7j";
+RCSERIAL=Ms,"AR0703001";
+SRVVER=Us,"Ver.DMY";
+SRVVER1=Us,"Servo_SW_Ver.AX1","Servo_SW_Ver.AX2","Servo_SW_Ver.AX3","Servo_SW_Ver.AX4","Servo_SW_Ver.AX5","Servo_SW_Ver.AX6","","";
+EH1VER=Ms,"EHSim-1";
+EH2VER=Ms,"EHSim-2";
+EH3VER=Ms,"EHSim-3";
+SLT1=Us,"TEST","REP","START","1";
